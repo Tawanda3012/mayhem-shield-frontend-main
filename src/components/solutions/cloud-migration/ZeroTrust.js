@@ -216,6 +216,9 @@ const ZeroTrust = () => {
     { number: "3", description: "Of the top 10 Primes rely on PreVeil" },
   ];
 
+  
+  
+
   return (
     <div>
       <div className="pb-20 h-fit lg:pb-52 lg:px-20">
@@ -413,7 +416,7 @@ const ZeroTrust = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-4 mt-2git0">
+      <div className="flex items-center justify-center p-4 mt-20">
         <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
           <div className="flex flex-col justify-center md:flex-row a">
             <div className="flex flex-col justify-center p-6 text-white bg-blue-800 md:w-1/2">
@@ -436,53 +439,8 @@ const ZeroTrust = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-10 lg:mx-20 sm:mx-5 justify-evenly">
-        <div className="text-2xl lg:w-1/3 md:w-2/5 sm:w-full">
-          <h1 className="text-3xl font-medium">Secure Access</h1>
-          <p>
-            With real-time data governance, you can now access all of your data
-            anywhere at any time applying access rules at the data level.
-          </p>
-        </div>
-        <div className="text-2xl lg:w-1/3 md:w-2/5 sm:w-full">
-          <h1 className="text-3xl font-medium">Proof Of Compliance</h1>
-          <p>
-            Secure chain of custody monitor each unit, so you can prove and
-            track the movement of your data ensuring full compliance, reducing
-            risk across environments.{" "}
-          </p>
-        </div>
-        <div className="text-2xl lg:w-1/3 md:w-2/5 sm:w-full">
-          <h1 className="text-3xl font-medium">Control Over All Your Data </h1>
-          <p>
-            {" "}
-            You set the rules and decide where each individual unit of data is
-            accessed, resulting in compliant data portability.{" "}
-          </p>
-        </div>
-        <div className="text-2xl lg:w-1/3 md:w-2/5 sm:w-full">
-          <h1 className="text-3xl font-medium"> Data Mobility </h1>
-          <p>
-            {" "}
-            XQs platform offers unique encryption and compliance for each
-            individual piece of data, so it can travel safely outside of your
-            enclosed infrastructure.
-          </p>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <p className="text-2xl lg:w-[60%] mx-auto sm:w-[80%] text-justify font-serif">
-        “Current and future cyber threats and attacks drive the need for a Zero
-        Trust approach that goes beyond the traditional perimeter defense
-        approach. The Department intends to implement distinct Zero Trust
-        capabilities and activities as outlined in the strategy and associated
-        Roadmap by FY27.”
-        <br />
-        <br />
-        <span className="italic text-md">- Department of Defense</span>
-      </p>
+     
+          
 
       <div
         className="flex flex-wrap gap-10 py-20 mt-10 lg:px-20 sm:px-10"
