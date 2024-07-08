@@ -413,7 +413,7 @@ const ZeroTrust = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-4 md:p-8">
+      <div className="flex items-center justify-center p-4 mt-2git0">
         <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
           <div className="flex flex-col justify-center md:flex-row a">
             <div className="flex flex-col justify-center p-6 text-white bg-blue-800 md:w-1/2">
