@@ -7,6 +7,44 @@ import DFARS_logo from "../../img/DFARS.png";
 import FIPS_logo from "../../img/FIPS140-2.png";
 import CMMCcert_logo from "../../img/CMMCcert.png";
 import CMMC from "../../img/ae06afe9e93e2462a7d92f5ee699c25d.png";
+import Card_img1 from "../../img/hqdefault copy.jpg";
+import Card_img2 from "../../img/110-JSVA-NEW-e1716478666351.png";
+import Card_img3 from "../../img/reaction-engines-customer-image.jpg"
+
+
+
+const TestimonialCard = ({ logo, title, description }) => (
+  <div className="overflow-hidden bg-blue-900 rounded-lg">
+    <div className="flex items-center justify-center h-24 p-4 bg-white">
+      <img src={logo} alt={title} className="max-h-full" />
+    </div>
+    <div className="p-6">
+      <h3 className="mb-4 text-xl font-bold text-orange-500">{title}</h3>
+      <p className="mb-4 text-white">{description}</p>
+      <a href="#" className="text-cyan-400 hover:underline">Read More →</a>
+    </div>
+  </div>
+);
+
+  const testimonials = [
+    {
+      logo: Card_img1 ,
+      title: "Zero Trust Sell Part 1",
+      description: "This construction company with DoD contracts used Mayhem Shiels to secure their enclave, reducing the cost and complexity of CMMC compliance."
+    },
+    {
+      logo: Card_img2,
+      title: "CMMC",
+      description: "This contractor achieved a perfect 110 JSVA score with our 3-part CMMC solution."
+    },
+    {
+      logo:Card_img3,
+      title: "Zero Trust Targeting Healthcare",
+      description: "This aerospace company found Mayhem Shieldis \"the perfect solution\" for transferring CUI and large files."
+    }
+  ];
+
+
 
 const ZeroTrust = () => {
   const imageUrl =
@@ -211,12 +249,14 @@ const ZeroTrust = () => {
     },
     {
       number: "30,000+",
-      description: "People use PreVeil every day to protect their data",
+      description: "People use Mayhem Shieldevery day to protect their data",
     },
     { number: "3", description: "Of the top 10 Primes rely on PreVeil" },
   ];
 
   
+ 
+
   
 
   return (
@@ -315,14 +355,14 @@ const ZeroTrust = () => {
                 <img src="/email-icon.png" alt="Email" className="w-8 h-8" />
               </div>
               <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
-                PreVeil Drive
+                Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
               <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
-                Learn More About PreVeil Email
+                Learn More About Mayhem ShieldEmail
               </button>
             </div>
             <div className="p-6 text-white bg-black md:w-1/2">
@@ -363,14 +403,14 @@ const ZeroTrust = () => {
                 <img src="/email-icon.png" alt="Email" className="w-8 h-8" />
               </div>
               <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
-                PreVeil Drive
+                Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
               <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
-                Learn More About PreVeil Email
+                Learn More About Mayhem ShieldEmail
               </button>
             </div>
           </div>
@@ -394,14 +434,14 @@ const ZeroTrust = () => {
                 <img src="/email-icon.png" alt="Email" className="w-8 h-8" />
               </div>
               <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
-                PreVeil Drive
+                Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
               <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
-                Learn More About PreVeil Email
+                Learn More About Mayhem ShieldEmail
               </button>
             </div>
             <div className="p-6 text-white bg-black md:w-1/2">
@@ -439,8 +479,16 @@ const ZeroTrust = () => {
         </div>
       </div>
 
-     
-          
+       
+      <div className="px-4 py-12 bg-blue-950">
+        <h1 className="font-bold">Industry Leading Events</h1>
+      <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto mt-10 md:grid-cols-3">
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard key={index} {...testimonial} />
+        ))}
+      </div>
+    </div>
+       
 
       <div
         className="flex flex-wrap gap-10 py-20 mt-10 lg:px-20 sm:px-10"
@@ -485,27 +533,6 @@ const ZeroTrust = () => {
             </>
           ))}
         </div>
-      </div>
-      <div className="p-5 mx-auto text-black lg:w-1/2 md:w-1/2 sm:w-full">
-        <h1 className="my-10 text-3xl">
-          Track, Control, Protect & Manage Your Data In One Place
-        </h1>
-        {Tracks.map((data, i) => (
-          <>
-            <div
-              key={i}
-              tabIndex={0}
-              className="bg-transparent border-b border-gray-500 collapse collapse-plus"
-            >
-              <div className="text-xl font-medium collapse-title">
-                {data.title}
-              </div>
-              <div className="collapse-content">
-                <p>{data.subtitle}</p>
-              </div>
-            </div>
-          </>
-        ))}
       </div>
       <div className="flex flex-wrap py-10 text-white bg-black lg:px-20 sm:px-5 justify-evenly">
         <div className="w-full text-xl max-w-[500px]">
