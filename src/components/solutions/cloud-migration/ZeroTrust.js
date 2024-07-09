@@ -12,8 +12,6 @@ import FIPS_logo from "../../img/FIPS140-2.png";
 import CMMCcert_logo from "../../img/CMMCcert.png";
 import CMMC from "../../img/ae06afe9e93e2462a7d92f5ee699c25d.png";
 import Card_img1 from "../../img/hqdefault copy.jpg";
-import Card_img2 from "../../img/110-JSVA-NEW-e1716478666351.png";
-import Card_img3 from "../../img/reaction-engines-customer-image.jpg";
 import Gmail from "../../img/gmail.png";
 import Outlook from "../../img/download (3).png";
 import LinkedIn from "../../img/LinkedIn.png";
@@ -23,20 +21,24 @@ import Health from "../../img/healthcare.png";
 import NonProfit from "../../img/none.jpg";
 
 const TestimonialCard = ({ logo, title, description }) => (
-  <div className="overflow-hidden bg-blue-900 rounded-lg">
-    <div className="flex items-center justify-center ">
-      <img src={logo} alt={title} className="max-h-full" />
+  <article className="relative overflow-hidden bg-blue-900 rounded-lg isolate">
+    <div className="absolute inset-0 flex flex-col justify-center">
+      <img
+        src={logo}
+        alt={title}
+        className="max-h-full m-auto"
+      />
+      <div className="p-6">
+        <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
+          {title}
+        </h3>
+        <p className="mb-4 text-white">{description}</p>
+        <a href="#" className="text-cyan-400 hover:underline">
+          Read More →
+        </a>
+      </div>
     </div>
-    <div className="p-6">
-      <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
-        {title}
-      </h3>
-      <p className="mb-4 text-white">{description}</p>
-      <a href="#" className="text-cyan-400 hover:underline">
-        Read More →
-      </a>
-    </div>
-  </div>
+  </article>
 );
 
 const testimonials = [
@@ -192,41 +194,41 @@ const ZeroTrust = () => {
       ),
     },
   ];
-  const SecurityBadge = ({ src, alt }) => (
-    <img src={src} alt={alt} className="w-12 h-12 mr-2" />
-  );
+  // const SecurityBadge = ({ src, alt }) => (
+  //   <img src={src} alt={alt} className="w-12 h-12 mr-2" />
+  // );
 
-  const Statistic = ({ number, description }) => (
-    <div className="px-4 text-center">
-      <h3 className="text-3xl font-bold text-blue-300">{number}</h3>
-      <p className="text-sm text-gray-300">{description}</p>
-    </div>
-  );
-  const icons_data = [
-    {
-      img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/34260a76-4598-4a2c-a1d2-7b31f34ae43c/email_icon..png",
-      title: "Zero Trust Secure Email",
-      hyperlink: "/solutions/ZeroTrustEmail",
-    },
-    {
-      img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/7d4bf122-1f50-439b-9311-0aeeec97c892/vault_icon.png",
-      title: "Zero Trust Secure Data Vault",
-      hyperlink: "/solutions/ZeroTrustVault",
-    },
-    {
-      img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/d1540abd-b932-4867-91e2-29e645567700/transfer_icon.png",
-      title: "Zero Trust Data Gateway",
-      hyperlink: "/solutions/ZeroTrustGateway",
-    },
-  ];
-  const containerStyle = {
-    backgroundImage: `url(${imageUrl})`,
-    backgroundSize: "cover",
-    backgroundPosition: "left bottom",
-    // width: '100%', // Adjust width as needed
-    // height: '500px', // Adjust height as needed
-    // transform: 'scale(1.2)', // 20% zoom
-  };
+  // const Statistic = ({ number, description }) => (
+  //   <div className="px-4 text-center">
+  //     <h3 className="text-3xl font-bold text-blue-300">{number}</h3>
+  //     <p className="text-sm text-gray-300">{description}</p>
+  //   </div>
+  // );
+  // const icons_data = [
+  //   {
+  //     img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/34260a76-4598-4a2c-a1d2-7b31f34ae43c/email_icon..png",
+  //     title: "Zero Trust Secure Email",
+  //     hyperlink: "/solutions/ZeroTrustEmail",
+  //   },
+  //   {
+  //     img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/7d4bf122-1f50-439b-9311-0aeeec97c892/vault_icon.png",
+  //     title: "Zero Trust Secure Data Vault",
+  //     hyperlink: "/solutions/ZeroTrustVault",
+  //   },
+  //   {
+  //     img: "https://images.squarespace-cdn.com/content/v1/5f5fdc1e710a334cac1a2c09/d1540abd-b932-4867-91e2-29e645567700/transfer_icon.png",
+  //     title: "Zero Trust Data Gateway",
+  //     hyperlink: "/solutions/ZeroTrustGateway",
+  //   },
+  // ];
+  // const containerStyle = {
+  //   backgroundImage: `url(${imageUrl})`,
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "left bottom",
+  //   // width: '100%', // Adjust width as needed
+  //   // height: '500px', // Adjust height as needed
+  //   // transform: 'scale(1.2)', // 20% zoom
+  // };
 
   const dynamicText = [
     "Sovereignty",
