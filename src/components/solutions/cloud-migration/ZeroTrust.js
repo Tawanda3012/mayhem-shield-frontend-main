@@ -60,7 +60,6 @@ const TestimonialCard = ({ logo, title, description }) => (
   </div>
 );
 
-
 const testimonials = [
   {
     logo: Card_img1,
@@ -573,7 +572,7 @@ const ZeroTrust = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="px-4 py-12 bg-blue-950">
         <h1 className="font-bold">Industry Leading Events</h1>
         <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto mt-10 md:grid-cols-3">
