@@ -2,6 +2,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaBook } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa'; 
 import jetImage from "../../img/jet.png";
 import NIST_logo from "../../img/NIST_logo.png";
 import FedRamp_logo from "../../img/FedRamp-1.png";
@@ -17,8 +19,8 @@ import Outlook from "../../img/download (3).png";
 import LinkedIn from "../../img/LinkedIn.png";
 import Legal from "../../img/legal.png";
 import Eductaion from "../../img/education.jpg";
-import Health from "../../img/healthcare.png"
-
+import Health from "../../img/healthcare.png";
+import NonProfit from "../../img/none.jpg";
 
 const TestimonialCard = ({ logo, title, description }) => (
   <div className="overflow-hidden bg-blue-900 rounded-lg">
@@ -257,42 +259,55 @@ const ZeroTrust = () => {
   const stats = [
     {
       number: "1,100+",
-      description: "Defense contractors, C3PAOs and businesses trust PreVeil",
+      description: "Defense contractors, C3PAOs and businesses trust Mayhem Shield",
     },
     {
       number: "30,000+",
       description: "People use Mayhem Shieldevery day to protect their data",
     },
-    { number: "3", description: "Of the top 10 Primes rely on PreVeil" },
+    { number: "3", description: "Of the top 10 Primes rely on Mayhem Shield" },
   ];
 
   return (
     <div>
       <div className="flex flex-col-reverse justify-center px-4 py-12 mb-20 text-white align-middle bg-blue-900 md:flex-row mt-30 sm:px-6 lg:px-8">
-      <div className="flex flex-col justify-center mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h2 className="mb-8 text-3xl font-bold">Simple, Encrypted Email and File Collaboration</h2>
-        <p className="mb-8 text-lg">
-          The leading solution for CMMC, NIST 800-171 & ITAR compliance.
-        </p>
-        <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-          <a
-            href="#"
-            className="px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
-          >
-            Book a Demo
-          </a>
-          <a
-            href="#"
-            className="px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
-          >
-            Book a Compliance Call
-          </a>
+        <div className="flex flex-col justify-center mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-3xl font-bold">
+            Simple, Encrypted Email and File Collaboration
+          </h2>
+          <p className="mb-8 text-lg">
+            The leading solution for CMMC, NIST 800-171 & ITAR compliance.
+          </p>
+          <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+            <Link
+              to="/lets-talk"
+              className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
+            >
+              <span className="inline-flex items-center">
+              <FaBook className="mr-2" />
+             
+                <span>Book a Demo</span>
+              </span>
+            </Link>
+            <Link
+              to="/lets-talk"
+              className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
+            >
+              <span className="inline-flex items-center">
+              <FaPhone className="mr-2" />
+                <span>Book a Complice call</span>
+              </span>
+            </Link>
+          </div>
+        </div>
+        <div className="max-w-full mb-8 banner-img md:mb-0 md:ml-8">
+          <img
+            src={Card_img1}
+            alt="banner"
+            className="object-contain w-full max-h-full"
+          />
         </div>
       </div>
-      <div className="max-w-full mb-8 banner-img md:mb-0 md:ml-8">
-        <img src={Card_img1} alt="banner" className="object-contain w-full max-h-full" />
-      </div>
-    </div>
 
       <div className="bg-[#101729] text-white py-12 px-4 md:px-8">
         <div className="container mx-auto">
@@ -504,13 +519,15 @@ const ZeroTrust = () => {
           <div className="flex flex-col justify-center md:flex-row a">
             <div className="flex flex-col justify-center p-6 text-white bg-blue-800 md:w-1/2">
               <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
-                Save up to 60% on CMMC,{'\n'} DFARS, and ITAR compliance
+                Save up to 60% on CMMC,{"\n"} DFARS, and ITAR compliance
               </h1>
-             <p className="mb-6 text-sm md:text-base">
-               Mayhem Shield is the leading CMMC{'\n'} compliance solution for Small{'\n'}
-               to Medium Enterprises. Three licenses, detailed documentation,{'\n'}
-               and access to our partner network for $249/m.
-             </p>
+              <p className="mb-6 text-sm md:text-base">
+                Mayhem Shield is the leading CMMC{"\n"} compliance solution for
+                Small{"\n"}
+                to Medium Enterprises. Three licenses, detailed documentation,
+                {"\n"}
+                and access to our partner network for $249/m.
+              </p>
               <button className="bg-transparent border-2 w-32 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
                 Get Started
               </button>
@@ -583,7 +600,7 @@ const ZeroTrust = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <img
-                src={Eductaion}
+                src={NonProfit}
                 alt="Aerospace & Defense"
                 className="h-32 mb-4"
               />
@@ -598,11 +615,7 @@ const ZeroTrust = () => {
               </h3>
             </div>
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <img
-                src={Health }
-                alt="Healthcare"
-                className="h-32 mb-4"
-              />
+              <img src={Health} alt="Healthcare" className="h-32 mb-4" />
               <h3 className="mb-2 text-xl font-bold text-blue-900">
                 Healthcare
               </h3>
