@@ -12,6 +12,8 @@ import FIPS_logo from "../../img/FIPS140-2.png";
 import CMMCcert_logo from "../../img/CMMCcert.png";
 import CMMC from "../../img/ae06afe9e93e2462a7d92f5ee699c25d.png";
 import Card_img1 from "../../img/hqdefault copy.jpg";
+import Card_img2 from "../../img/110-JSVA-NEW-e1716478666351.png";
+import Card_img3 from "../../img/reaction-engines-customer-image.jpg";
 import Gmail from "../../img/gmail.png";
 import Outlook from "../../img/download (3).png";
 import LinkedIn from "../../img/LinkedIn.png";
@@ -20,26 +22,44 @@ import Eductaion from "../../img/education.jpg";
 import Health from "../../img/healthcare.png";
 import NonProfit from "../../img/none.jpg";
 
+// const TestimonialCard = ({ logo, title, description }) => (
+//   <div className="relative overflow-hidden bg-blue-900 rounded-lg isolate">
+//     <div className="absolute inset-0 flex flex-col justify-center">
+//       <img
+//         src={logo}
+//         alt={title}
+//         className="max-h-full m-auto"
+//       />
+//       <div className="p-6">
+//         <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
+//           {title}
+//         </h3>
+//         <p className="mb-4 text-white">{description}</p>
+//         <a href="#" className="text-cyan-400 hover:underline">
+//           Read More →
+//         </a>
+//       </div>
+//     </div>
+//   </div>
+// );
+
 const TestimonialCard = ({ logo, title, description }) => (
-  <article className="relative overflow-hidden bg-blue-900 rounded-lg isolate">
-    <div className="absolute inset-0 flex flex-col justify-center">
-      <img
-        src={logo}
-        alt={title}
-        className="max-h-full m-auto"
-      />
-      <div className="p-6">
-        <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
-          {title}
-        </h3>
-        <p className="mb-4 text-white">{description}</p>
-        <a href="#" className="text-cyan-400 hover:underline">
-          Read More →
-        </a>
-      </div>
+  <div className="overflow-hidden bg-blue-900 rounded-lg">
+    <div className="flex items-center justify-center ">
+      <img src={logo} alt={title} className="max-h-full" />
     </div>
-  </article>
+    <div className="p-6">
+      <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
+        {title}
+      </h3>
+      <p className="mb-4 text-white">{description}</p>
+      <a href="#" className="text-cyan-400 hover:underline">
+        Read More →
+      </a>
+    </div>
+  </div>
 );
+
 
 const testimonials = [
   {
@@ -553,7 +573,7 @@ const ZeroTrust = () => {
           </div>
         </div>
       </div>
-
+      
       <div className="px-4 py-12 bg-blue-950">
         <h1 className="font-bold">Industry Leading Events</h1>
         <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto mt-10 md:grid-cols-3">
