@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { FaBook } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa'; 
+import { FaBook } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import jetImage from "../../img/jet.png";
 import NIST_logo from "../../img/NIST_logo.png";
 import FedRamp_logo from "../../img/FedRamp-1.png";
@@ -259,7 +259,8 @@ const ZeroTrust = () => {
   const stats = [
     {
       number: "1,100+",
-      description: "Defense contractors, C3PAOs and businesses trust Mayhem Shield",
+      description:
+        "Defense contractors, C3PAOs and businesses trust Mayhem Shield",
     },
     {
       number: "30,000+",
@@ -284,8 +285,8 @@ const ZeroTrust = () => {
               className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
             >
               <span className="inline-flex items-center">
-              <FaBook className="mr-2" />
-             
+                <FaBook className="mr-2" />
+
                 <span>Book a Demo</span>
               </span>
             </Link>
@@ -294,7 +295,7 @@ const ZeroTrust = () => {
               className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
             >
               <span className="inline-flex items-center">
-              <FaPhone className="mr-2" />
+                <FaPhone className="mr-2" />
                 <span>Book a Complice call</span>
               </span>
             </Link>
@@ -392,9 +393,15 @@ const ZeroTrust = () => {
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
-              <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
+              {/* <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
                 Learn More About Mayhem ShieldEmail
-              </button>
+              </button> */}
+              <Link
+                to="/company"
+                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+              >
+                Learn More About Mayhem ShieldEmail
+              </Link>
             </div>
             <div className="p-6 text-white bg-black md:w-1/2">
               <iframe
@@ -454,9 +461,12 @@ const ZeroTrust = () => {
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
-              <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
+              <Link
+                to="/company"
+                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+              >
                 Learn More About Mayhem ShieldEmail
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -495,9 +505,12 @@ const ZeroTrust = () => {
                 Encrypt, store and share files, on any device. Works with
                 Windows Explorer, Mac Finder, and on browsers.
               </p>
-              <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
+              <Link
+                to="/company"
+                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+              >
                 Learn More About Mayhem ShieldEmail
-              </button>
+              </Link>
             </div>
             <div className="p-6 text-white bg-black md:w-1/2">
               {" "}
