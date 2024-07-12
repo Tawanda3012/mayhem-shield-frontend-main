@@ -12,8 +12,6 @@ import FIPS_logo from "../../img/FIPS140-2.png";
 import CMMCcert_logo from "../../img/CMMCcert.png";
 import CMMC from "../../img/ae06afe9e93e2462a7d92f5ee699c25d.png";
 import Card_img1 from "../../img/hqdefault copy.jpg";
-import Card_img2 from "../../img/110-JSVA-NEW-e1716478666351.png";
-import Card_img3 from "../../img/reaction-engines-customer-image.jpg";
 import Gmail from "../../img/gmail.png";
 import Outlook from "../../img/download (3).png";
 import LinkedIn from "../../img/LinkedIn.png";
@@ -21,6 +19,9 @@ import Legal from "../../img/legal.png";
 import Eductaion from "../../img/education.jpg";
 import Health from "../../img/healthcare.png";
 import NonProfit from "../../img/none.jpg";
+import Public from "../../img/public.png";
+import Finance from "../../img/finance2.png";
+import Pdf from "../../img/Mayhem Shield-Implementing Zero Trust Strategy Guide.pdf.pdf";
 
 // const TestimonialCard = ({ logo, title, description }) => (
 //   <div className="relative overflow-hidden bg-blue-900 rounded-lg isolate">
@@ -49,7 +50,7 @@ const TestimonialCard = ({ logo, title, description }) => (
       <img src={logo} alt={title} className="max-h-full" />
     </div>
     <div className="p-6">
-      <h3 className="mb-4 text-xl font-bold text-center text-orange-500">
+      <h3 className="mb-4 text-xl font-bold text-center text-[#FFFFFF]">
         {title}
       </h3>
       <p className="mb-4 text-white">{description}</p>
@@ -292,7 +293,7 @@ const ZeroTrust = () => {
 
   return (
     <div>
-      <div className="flex flex-col-reverse justify-center px-4 py-12 mb-20 text-white align-middle bg-blue-900 md:flex-row mt-30 sm:px-6 lg:px-8">
+      <div className="flex flex-col-reverse justify-center px-4 py-12 mb-20 text-white align-middle bg-[#0000FF]  md:flex-row mt-30 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-center mx-auto max-w-7xl sm:px-6 lg:px-8">
           <h2 className="mb-8 text-3xl font-bold">
             Simple, Encrypted Email and File Collaboration
@@ -303,7 +304,7 @@ const ZeroTrust = () => {
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
             <Link
               to="/lets-talk"
-              className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
+              className="inline-block px-6 py-3 font-bold text-white bg-[#38A4DD] rounded-lg hover:bg-orange-700"
             >
               <span className="inline-flex items-center">
                 <FaBook className="mr-2" />
@@ -313,7 +314,7 @@ const ZeroTrust = () => {
             </Link>
             <Link
               to="/lets-talk"
-              className="inline-block px-6 py-3 font-bold text-white bg-orange-600 rounded-lg hover:bg-orange-700"
+              className="inline-block px-6 py-3 font-bold text-white bg-[#38A4DD] rounded-lg hover:bg-orange-700"
             >
               <span className="inline-flex items-center">
                 <FaPhone className="mr-2" />
@@ -363,7 +364,7 @@ const ZeroTrust = () => {
               <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 {stats.map((stat, index) => (
                   <div key={index}>
-                    <h3 className="text-3xl font-bold text-[#4FD1C5] mb-2">
+                    <h3 className="text-3xl font-bold text-[#38A4DD] mb-2">
                       {stat.number}
                     </h3>
                     <p className="text-sm">{stat.description}</p>
@@ -381,9 +382,9 @@ const ZeroTrust = () => {
       </div>
 
       <div className="p-4  bg-[#06091C] md:p-8">
-        <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
+        <div className="overflow-hidden bg-[#0000FF] rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row">
-            <div className="p-6 text-white bg-blue-800 md:w-1/2">
+            <div className="p-6 text-white bg-[#0000FF] md:w-1/2">
               <div className="flex mb-4">
                 <a href="">
                   <img
@@ -407,19 +408,20 @@ const ZeroTrust = () => {
                   />
                 </a>
               </div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#FFFFFF] mb-4">
                 Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
-                Encrypt, store and share files, on any device. Works with
-                Windows Explorer, Mac Finder, and on browsers.
+                Platform Superiority: Mayhem Shiled's platform outperforms other
+                solutions in terms of securing data, chain of custody, and
+                rights management.
               </p>
-              {/* <button className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
+              {/* <button className="bg-transparent border-2 border-[#F36424] text-[#FFFFFF] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
                 Learn More About Mayhem ShieldEmail
               </button> */}
               <Link
                 to="/company"
-                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+                className="bg-transparent border-2 border-[#38A4DD] text-[#FFFFFF] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
               >
                 Learn More About Mayhem ShieldEmail
               </Link>
@@ -438,7 +440,7 @@ const ZeroTrust = () => {
         </div>
       </div>
       <div className="p-4 bg-[#06091C] md:p-8">
-        <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
+        <div className="overflow-hidden bg-[#0000FF] rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row">
             <div className="p-6 text-white bg-black md:w-1/2">
               <iframe
@@ -451,7 +453,7 @@ const ZeroTrust = () => {
               ></iframe>
             </div>
 
-            <div className="p-6 text-white bg-blue-800 md:w-1/2">
+            <div className="p-6 text-white bg-[#0000FF] md:w-1/2">
               <div className="flex mb-4">
                 <a href="#">
                   <img
@@ -475,16 +477,17 @@ const ZeroTrust = () => {
                   />
                 </a>
               </div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#FFFFFF] mb-4">
                 Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
-                Encrypt, store and share files, on any device. Works with
-                Windows Explorer, Mac Finder, and on browsers.
+                CMMC Level 2 Compliance: Mayhem Shield offers organizations a
+                way to achieve compliance with CMMC Level 2, a cybersecurity
+                standard required for defense contractors.
               </p>
               <Link
                 to="/company"
-                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+                className="bg-transparent border-2 border-[#38A4DD] text-[#FFFFFF] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
               >
                 Learn More About Mayhem ShieldEmail
               </Link>
@@ -493,9 +496,9 @@ const ZeroTrust = () => {
         </div>
       </div>
       <div className="p-4  bg-[#06091C] md:p-8">
-        <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
+        <div className="overflow-hidden bg-[#0000FF] rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row">
-            <div className="p-6 text-white bg-blue-800 md:w-1/2">
+            <div className="p-6 text-white bg-[#0000FF] md:w-1/2">
               <div className="flex mb-4">
                 <a href="#">
                   <img
@@ -519,16 +522,19 @@ const ZeroTrust = () => {
                   />
                 </a>
               </div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#FFFFFF] mb-4">
                 Mayhem Shield
               </h1>
               <p className="mb-6 text-sm md:text-base">
-                Encrypt, store and share files, on any device. Works with
-                Windows Explorer, Mac Finder, and on browsers.
+                Zero Trust protects client personally identifiable information
+                by verifying the identity of the endpoint user, employing
+                constant verification and crypto-agile, quantum-resistant
+                encryption along with real-time logging and notifications while
+                never having the client data
               </p>
               <Link
                 to="/company"
-                className="bg-transparent border-2 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+                className="bg-transparent border-2 border-[#38A4DD] text-[#FFFFFF] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
               >
                 Learn More About Mayhem ShieldEmail
               </Link>
@@ -549,10 +555,10 @@ const ZeroTrust = () => {
       </div>
 
       <div className="flex items-center justify-center p-4 mt-20">
-        <div className="overflow-hidden bg-blue-800 rounded-lg shadow-lg">
+        <div className="overflow-hidden bg-[#0000FF] rounded-lg shadow-lg">
           <div className="flex flex-col justify-center md:flex-row a">
-            <div className="flex flex-col justify-center p-6 text-white bg-blue-800 md:w-1/2">
-              <h1 className="text-2xl md:text-3xl font-bold text-[#F36424] mb-4">
+            <div className="flex flex-col justify-center p-6 text-white bg-[#0000FF] md:w-1/2">
+              <h1 className="text-2xl md:text-3xl font-bold text-[#FFFFFF] mb-4">
                 Save up to 60% on CMMC,{"\n"} DFARS, and ITAR compliance
               </h1>
               <p className="mb-6 text-sm md:text-base">
@@ -562,9 +568,12 @@ const ZeroTrust = () => {
                 {"\n"}
                 and access to our partner network for $249/m.
               </p>
-              <button className="bg-transparent border-2 w-32 border-[#F36424] text-[#F36424] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300">
+              <Link
+                to="/lets-talk"
+                className="bg-transparent border-2 w-32 border-[#38A4DD] text-bold text-[#FFFFFF] px-4 py-2 rounded hover:bg-[#F36424] hover:text-white transition duration-300"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
             <div className="flex items-center p-6 bg-black mtext-white md:w-1/2">
               <img src={CMMC} alt="Fighter Jet" className="w-full" />
@@ -592,15 +601,27 @@ const ZeroTrust = () => {
         <h1 className="w-3/5 text-3xl text-gray-50">
           Fast, Easy, Affordable Path To CMMC Certification
         </h1>
-        <div className="text-white w-fi">
+        <div className="flex text-white ju w-fi3e">
           <NavLink
             to="https://api.leadconnectorhq.com/widget/booking/jvoFgs2jhSzXkld9mU4M"
-            className="px-10 mb-5 text-blue-500 normal-case bg-white border-0 rounded-full btn hover:bg-gray-50"
+            className="px-10 mb-5 mr-3 text-blue-500 normal-case bg-white border-0 rounded-full btn hover:bg-gray-50"
           >
             Start Now
           </NavLink>
           <br />
-          <NavLink to="">Download One Pager</NavLink>
+          <button
+            className="px-10 mb-5 text-blue-500 normal-case bg-white border-0 rounded-full btn hover:bg-gray-50"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = Pdf;
+              link.download = { Pdf };
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
+            Download One Pager
+          </button>
         </div>
       </div>
       <div className="py-20 bg-blue-600">
@@ -657,6 +678,18 @@ const ZeroTrust = () => {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <img src={Legal} alt="Legal" className="h-32 mb-4" />
               <h3 className="mb-2 text-xl font-bold text-blue-900">Legal</h3>
+            </div>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+              <img src={Public} alt="Healthcare" className="h-32 mb-4" />
+              <h3 className="mb-2 text-xl font-bold text-blue-900">
+                Public Sector
+              </h3>
+            </div>
+            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
+              <img src={Finance} alt="Legal" className="h-32 mb-4" />
+              <h3 className="mb-2 text-xl font-bold text-blue-900">
+                Financial
+              </h3>
             </div>
           </div>
         </div>
